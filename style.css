@@ -45,6 +45,7 @@ min-height: 333px;
     padding: 10px;
     font-weight: 15px;
     cursor: text;
+    flex: 1;
 }
 .input-row button{
     background: #dd9f42;
@@ -66,6 +67,7 @@ padding: 12px 9px 12px 50px;
 user-select: none;
 cursor: pointer;
 position: relative;
+border-radius: 30px;
 }
 .list-container li::before{
     content: '';
@@ -79,6 +81,9 @@ position: relative;
     top: 8px;
     left: 9px;
 }
+.list-container li:hover{
+    background: #b3b1b1;
+}
 .list-container li.checked{
     color: #555;
     text-decoration: line-through;
@@ -86,4 +91,19 @@ position: relative;
 }
 .list-container li.checked::before{
     background-image: url(images/checked.png);
+}
+.list-container li span{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
+.list-container li span:hover{
+    background: #646464;
+    border-radius: 50%;
 }
